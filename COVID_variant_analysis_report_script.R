@@ -1,7 +1,11 @@
+library(gplots)
+library(dplyr) #required for modification of data
+library(pryr) #required to save basic rplots as object
 library(ggplot2)
-library(reshape)
-library(dplyr)
 library(gt)
+library(ggpubr)
+library(gridExtra)
+
 
 filenames <- list.files(pattern="*.txt")
 
