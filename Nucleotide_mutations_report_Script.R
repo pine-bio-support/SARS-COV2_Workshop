@@ -18,8 +18,8 @@ report_name <- toString(sub(".txt", ".pdf", Protein))
 
 
 #load and prepare data
-#msa <- read.table("input_data.txt", sep="\t",  header=TRUE, check.names = F)
-msa <- read.table("UK_Waste_water_MSA_out_Table_report_input.txt", sep="\t",  header=TRUE, check.names = F)
+msa <- read.table("input_data.txt", sep="\t",  header=TRUE, check.names = F)
+#msa <- read.table("Variant_detection_nucleotide_input.txt", sep="\t",  header=TRUE, check.names = F)
 
 
 #prepare a numeric matrix for msa1 data frame
@@ -44,8 +44,8 @@ dim(msa1msel)
 head(msa1sel[1])
 
 #select only data where any sample has a variant to create a report
-new_df <- msa1sel[!(msa1sel[1] == msa1sel[2] & msa1sel[1] == msa1sel[3] & msa1sel[1] == msa1sel[4] & msa1sel[1] == msa1sel[5] & msa1sel[1] == msa1sel[6] & msa1sel[1] == msa1sel[7] & msa1sel[1] == msa1sel[8] & msa1sel[1] == msa1sel[9] & msa1sel[1] == msa1sel[10] & msa1sel[1] == msa1sel[11]),] 
-#new_df <- msa1sel[!(msa1sel[1] == msa1sel[2] & msa1sel[1] == msa1sel[3] & msa1sel[1] == msa1sel[4] & msa1sel[1] == msa1sel[5] & msa1sel[1] == msa1sel[6] & msa1sel[1] == msa1sel[7] & msa1sel[1] == msa1sel[8] & msa1sel[1] == msa1sel[9] & msa1sel[1] == msa1sel[10] & msa1sel[1] == msa1sel[11]& msa1sel[1] == msa1sel[12]& msa1sel[1] == msa1sel[13]& msa1sel[1] == msa1sel[14]& msa1sel[1] == msa1sel[15]& msa1sel[1] == msa1sel[16]& msa1sel[1] == msa1sel[17]& msa1sel[1] == msa1sel[18]& msa1sel[1] == msa1sel[19]& msa1sel[1] == msa1sel[20]& msa1sel[1] == msa1sel[21]& msa1sel[1] == msa1sel[22]& msa1sel[1] == msa1sel[23]& msa1sel[1] == msa1sel[24]),] 
+#new_df <- msa1sel[!(msa1sel[2] == msa1sel[3] & msa1sel[2] == msa1sel[4] & msa1sel[2] == msa1sel[5] & msa1sel[2] == msa1sel[6] & msa1sel[2] == msa1sel[7] & msa1sel[2] == msa1sel[8] & msa1sel[2] == msa1sel[9] & msa1sel[2] == msa1sel[10] & msa1sel[2] == msa1sel[11]),] 
+new_df <- msa1sel[!(msa1sel[1] == msa1sel[2] & msa1sel[1] == msa1sel[3] & msa1sel[1] == msa1sel[4] & msa1sel[1] == msa1sel[5] & msa1sel[1] == msa1sel[6] & msa1sel[1] == msa1sel[7] & msa1sel[1] == msa1sel[8] & msa1sel[1] == msa1sel[9] & msa1sel[1] == msa1sel[10] & msa1sel[1] == msa1sel[11]& msa1sel[1] == msa1sel[12]& msa1sel[1] == msa1sel[13]& msa1sel[1] == msa1sel[14]& msa1sel[1] == msa1sel[15]& msa1sel[1] == msa1sel[16]& msa1sel[1] == msa1sel[17]& msa1sel[1] == msa1sel[18]& msa1sel[1] == msa1sel[19]& msa1sel[1] == msa1sel[20]& msa1sel[1] == msa1sel[21]& msa1sel[1] == msa1sel[22]& msa1sel[1] == msa1sel[23]& msa1sel[1] == msa1sel[24]),] 
 
 
 
